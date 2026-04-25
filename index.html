@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kappa Sign In</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1a1a; --ink-muted: #6b6b6b; --ink-faint: #aaaaaa;
+    --surface: #f7f5f0; --paper: #ffffff; --accent: #2d5a3d;
+    --accent-light: #e8f0eb; --border: #e0ddd6;
+  }
+  html, body { min-height: 100%; background: var(--surface); font-family: 'DM Sans', sans-serif; color: var(--ink); }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem 1rem; }
+  .wrap { width: 100%; max-width: 420px; text-align: center; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); margin: 0 auto 1.5rem; }
+  h1 { font-family: 'DM Serif Display', serif; font-size: 2rem; margin-bottom: 0.5rem; }
+  p { font-size: 0.95rem; color: var(--ink-muted); margin-bottom: 2rem; }
+  .card { background: var(--paper); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; display: flex; flex-direction: column; gap: 12px; }
+  a { display: block; padding: 0.9rem; border-radius: 10px; font-size: 0.95rem; font-weight: 500; text-decoration: none; transition: background 0.15s; }
+  .btn-main { background: var(--accent); color: #fff; }
+  .btn-main:hover { background: #24472f; }
+  .btn-sec { background: var(--surface); color: var(--ink-muted); border: 1px solid var(--border); }
+  .btn-sec:hover { background: var(--border); }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+  .wrap { animation: fadeUp 0.4s ease both; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="dot"></div>
+  <h1>Kappa Sign In</h1>
+  <p>Select your role below</p>
+  <div class="card">
+    <a href="signin.html" class="btn-main">✍ Sign In (Members)</a>
+    <a href="admin.html" class="btn-sec">🔒 Admin Log</a>
+  </div>
+</div>
+</body>
+</html>
